@@ -5,7 +5,7 @@ import { verifyPayment } from "../middleware/verifyPayment.js";
 const router=Router();
 
 router.route('/order').post(createOrder);
-// router.route('/book').post(verifyPayment,bookTicket);
-router.route('/book').post(bookTicket);
+router.route('/book').post(verifyPayment,bookTicket);
+// router.route('/book').post(bookTicket);
 
 export default router;
