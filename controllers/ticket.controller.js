@@ -2,7 +2,7 @@ import asyncHandler from 'express-async-handler';
 import { ApiError } from '../utils/ApiError.js';
 import { User } from '../models/user.model.js';
 import { Ticket } from '../models/ticket.model.js';
-// import { instance } from '../utils/razorpayConfig.js';
+import { instance } from '../utils/razorpayConfig.js';
 import { Service } from '../models/services.model.js';
 
 export const createOrder = asyncHandler(
